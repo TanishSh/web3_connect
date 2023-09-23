@@ -1,0 +1,28 @@
+/* Buttons & Inputs */
+
+button, #tag-input, #post-content {
+    transition: all 0.3s ease;
+}
+.upvote-button, .downvote-button, .tag-button, .reply-button, .contribute-button, button[type="submit"] {
+    background-color: #002244; /* Dark Blue to match header */
+}
+
+#nft-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+#nft-gallery img {
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    border-bottom: 1px solid #333;
+    padding-bottom: 10px;
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: 500;
+}
