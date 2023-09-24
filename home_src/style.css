@@ -17,10 +17,10 @@
 }
 
 :root {
-    --bg-color: #e8ebf1;
-    --second-bg-color: #90470c;
-    --text-color: #000000;
-    --main-color: #E9E813;
+    --bg-color: #1f242d;
+    --second-bg-color: #3b3573;
+    --text-color: #fff;
+    --main-color: #5a4ae3;
 }
 
 html {
@@ -123,7 +123,7 @@ span{
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    width: 4rem;
+    min-width: 4rem;
     height: 4rem;
     background: transparent;
     border: .2rem solid var(--main-color);
@@ -132,6 +132,8 @@ span{
     color: var(--main-color);
     margin: 3rem 1.5rem 3rem 0;
     transition: .5s ease;
+    padding: 0 1rem; /* Added padding for some space on the sides */
+    box-sizing: border-box; /* To make sure padding + width remains constant */
 }
 
 .social-media a:hover{
@@ -236,3 +238,10 @@ span{
     background-color: #f1f1f1;
     z-index: 1;
   }
+
+  .home-img img{
+    width: 35vw;
+    animation: floatImage 4s ease-in-out infinite;
+    float:right;
+}
+
